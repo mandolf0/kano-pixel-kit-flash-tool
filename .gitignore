@@ -4,3 +4,5 @@ __pycache__/
 *.log
 .cache/
 .claude/
+config.py
+weather_standalone.py

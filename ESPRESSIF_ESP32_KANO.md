@@ -317,6 +317,22 @@ import PixelTurtle   # Turtle graphics
 
 ---
 
+## Uploading Files to Device
+
+Use `ampy` to upload MicroPython scripts to the device:
+
+```bash
+pip install adafruit-ampy
+
+# Upload a script as main.py (runs on boot)
+ampy --port /dev/ttyUSB0 put weather_standalone.py main.py
+
+# Reboot the device
+ampy --port /dev/ttyUSB0 reset
+```
+
+---
+
 ## Tips & Gotchas
 
 1. **Always call `pk.render()`** - Changes don't appear until you render
